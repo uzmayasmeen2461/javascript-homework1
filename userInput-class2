@@ -1,0 +1,87 @@
+
+//data types -8 data types in js
+
+// String. ---- "hi there this is string" '   '
+// Number.
+// Bigint.-- big number
+// Boolean.-- true or false
+// Undefined.
+// Null.
+// Symbol.
+// Object.
+
+
+
+const helloMessage = "hi there this is a string"
+   console.log(typeof(helloMessage))
+
+// document.write(string);
+
+
+let bigNumber=BigInt(9007199254740991)
+console.log(typeof(bigNumber));
+
+let x=true;
+let anotherValue=false;
+
+// if (x===true){
+//     console.log("hi");
+// }
+// else(
+//     console.log("bye")
+// )
+
+
+let z;
+
+console.log(z);//undefined
+console.log(typeof(z))
+
+
+
+let student = null;
+console.log(typeof(student));
+// difference between null and undefined
+
+//object
+
+const person = {firstName:"john",lastName:"Abraham"}
+//key value pairs
+
+
+
+//Array object
+const cars=["Tata","Volvo","BMW"]//array of strings
+console.log(cars)
+
+
+// + ---- addition
+// - ----subs
+
+// * ---- multiply
+
+let value = "i am a value";
+
+console.log(typeof(value))
+
+console.log(isNaN(value));
+
+let number = 5;
+console.log(isNaN(number));
+
+console.clear();
+
+
+alert('hello guys');
+
+confirm("are you enjoying the class?");
+
+const x = prompt("enter a value");//input
+const y = prompt("enter another value"); 
+let result = parseInt(x) + parseInt(y);  //parseint(x+y)
+console.log(result);
+
+
+
+
+// home work ---- take three values from user and demonstrate mathematical operation on them

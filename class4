@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         <!-- coercion in javascript -->
+
+const sum =35 + " hello";
+console.log(sum)
+
+console.log(typeof(sum));
+
+const times = 35 * "hello";
+console.log(times)
+
+
+const string = " ";
+const number = 40;
+const boolean = true;
+
+console.log(!string);
+
+console.log(boolean + string)
+console.log(40 + true) //false-0 & true -1 
+
+console.clear();
+
+// explicit Number() String() Boolean();
+
+console.log(typeof(Number("25"))) //expliciot coercion
+console.log(typeof(String(25)));
+
+console.log(Boolean(null))
+
+
+//objects
+
+
+const person = {firstName:"john" , lastName:"Doe" ,age:50,designation:"developer"};
+console.log(person)
+//properties - firstName,lastName,age,designation
+//values - john,doe,50,developer
+ 
+// Object Methods
+
+const employee={};
+employee.firstName="Jacob"
+employee.salary="400$"
+console.log(employee)
+
+console.clear();
+
+const student = new Object();
+student.name="john";
+student.rollNumber=14;
+student.rank=1;
+// console.log(student.name)
+
+
+student.name="johnny"
+console.log(student);
+
+delete student.rollNumber; //delete a property from an object
+console.log(student)
+
+console.log(Object.values(student)); //get all object values
+console.log(Object.keys(student));// get all object keys
+    </script>
+   
+
+
+</body>
+</html>

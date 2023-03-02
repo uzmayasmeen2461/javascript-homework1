@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guess a number</h1>
+<h2>Guess the number i am hiding</h2>
+
+    <script>
+let number = 15;
+
+let x=prompt("guess a number?");
+
+if(x < number){
+    alert("you guessed a lower number. guess a bigger number");
+}
+else if(x>number){
+    alert("you guessed a higher number. guess a smaller number")
+}
+else if(x == number){
+    alert("congrats! you guessed it right");
+}
+else{
+    alert("enter a valid number")
+}
+
+
+
+
+    </script>
+</body>
+</html>

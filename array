@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Arrays</h1>
+
+    <script>
+// an array is a special variable which can hold more than one value;
+let a=5;
+let car="honda" ;
+const cars=["Honda","Volvo","BMW"];
+
+
+// const fruit=["apple","mango","grapes","banana"];
+
+// console.log(fruit[3]);
+
+
+
+
+
+const fruits = [];
+fruits[0]="apple";
+fruits[1]="grapes";
+fruits[2]="banana";
+
+
+fruits[4]="kiwi";
+fruits[3]="mango"
+console.log(fruits.length);
+
+//new keyword
+
+const friends = new Array("john","bob","gracy");
+console.log(friends);
+
+friends[3] = "rishi";
+
+console.log(friends)
+
+
+const bestFriend = friends[1];
+console.log("my best friend is " +bestFriend);
+
+//arrays are special type of objects
+
+console.log(typeof(friends)) //objects
+
+friends[4]= fruits
+
+console.log(friends);
+console.log(friends[4][2] , friends[4][3]); //2 dimensional array
+
+console.log(friends[0] + " likes " + friends[4][2] + " and " +friends[2] + " likes " + friends[4][3])
+//string or template literals
+
+console.log(`${friends[0]} likes ${friends[4][2]} and ${friends[2]} likes ${friends[4][3]}`)
+// ``${}
+
+console.log(`my bestfrnd is ${bestFriend}`);
+
+
+
+
+//access last element of the array;
+console.clear();
+console.log(fruits[fruits.length-1]);
+
+//add an element to array
+fruits.push("lemon");
+console.log(fruits)
+fruits.pop();
+console.log(fruits)
+fruits.unshift("lemon");
+console.log(fruits);
+console.log(fruits[2]);
+
+fruits.shift();
+console.log(fruits);
+
+delete fruits[3];
+console.log(fruits);
+        </script>
+</body>
+</html>

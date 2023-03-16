@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Events</h1>
+    <button id="btn">what is the time and date today? </button>
+    <button id="btn2" >surprise me! </button>
+    <button id="btn3">keyboard event</button>
+
+
+    <input type="text" id="input" value="hello" oninput="onInput()" onchange="onChange(this.value)"/>
+
+
+    <input type="text" id="input2" onfocus="focusFunction()" />
+
+<p id="para"></p>
+
+
+<form action="#" onsubmit="submitFunction()">
+    Enter name: <input type="text" id="name" name="fname">
+    <input type="submit" value="submit">
+
+</form>
+    
+    <script>
+        //events are things which we want to happen to html  elements
+        //javascript can react to events
+//      const date = new Date().toLocaleString();
+// const btn = document.getElementById('btn');
+// console.log(btn);
+// //click event 
+// btn.addEventListener('click',function(){
+//     console.log('button is clicked');
+// document.getElementById("h1").innerHTML = `Today is ${date}`
+
+
+// })
+
+//onchange
+//onclick
+//onmouseover
+//onmouseout
+//onkeydown
+//onload
+
+
+//event handlers used to handle and verify the user input,actions and browser actions
+
+
+
+// const btn2 = document.getElementById("btn2");
+// btn2.addEventListener('mouseover',function(){
+//     btn2.innerText="i got surprised"
+// })
+
+// function mouseOver(){
+//     btn2.style.color="red"
+//     btn2.innerText = "surprised"
+// }
+// function mouseOut(){
+//     btn2.style.color="blue"
+//     btn2.innerText = "surprised again!!"
+// }
+
+
+// window.onload= function(){
+//     alert("you should login first")
+// }
+
+
+//keyboard events
+
+//onkeyup
+//onkeydown
+//onkeypress
+
+// const btn3 = document.getElementById("btn3");
+
+// btn3.addEventListener('keyup',function(event){
+//     btn3.innerText = `key pressed: ${event.key} `
+//     console.log(`key pressed: ${event.shiftKey} `);
+//     console.log(event)
+// })
+//form events
+
+
+//onblur
+//onchange
+//onfocus
+//onInput
+//onSubmit
+//default behaviour
+//e.preventDefault
+
+
+const input = document.getElementById("input")
+const para = document.getElementById("para")
+function onInput( ){
+   
+   console.log(input.value) ;
+   para.innerText = "you wrote " + input.value
+}
+
+
+function onChange(val){
+    alert("the value changed to" + val);
+
+}
+
+function focusFunction(){
+    document.getElementById("input2").style.backgroundColor="yellow"
+}
+
+const input2 = document.getElementById("input2");
+input2.addEventListener("blur",function(){
+    input2.style.backgroundColor="red"
+})
+const name = document.getElementById("name");
+function submitFunction(){
+   
+    alert(`the form was submitted ${name.value} `)
+}
+
+    </script>
+</body>
+</html>

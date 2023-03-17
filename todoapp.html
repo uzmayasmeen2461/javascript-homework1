@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            background-color:antiquewhite;
+        }
+        #list{
+            font-size: larger;
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <h1>TODO APP</h1>
+    <form action="#" id="form">
+        Enter todo: <input type="text" id="todo" name="fname">
+        <input type="submit" value="submit">
+    
+    </form>
+    <ul id="list"></ul>
+    <script>
+const list = document.getElementById("list")
+const form = document.getElementById("form")
+const todo = document.getElementById("todo")
+form.addEventListener("submit",function(event){
+   event.preventDefault();
+    console.log("submitted")
+    if(todo.value === " "){
+        return
+    }
+   const li = document.createElement("li");
+  li.innerText = todo.value;
+      list.appendChild(li);
+      todo.value=" ";
+
+      li.addEventListener('click',function(){
+        list.removeChild(li)
+      })
+})
+
+
+       
+    </script>
+</body>
+</html>

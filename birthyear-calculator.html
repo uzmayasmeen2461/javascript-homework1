@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth year</title>
+    <style>
+*{
+    margin:0;
+    padding:0;
+}
+
+img{
+    width:300px;
+    display: inline-block;
+
+}
+#container{
+    background-image:url(/images/pexels-photo-379732.jpeg);
+    background-size:cover;
+    backdrop-filter: "blur";
+
+width:600px;
+height:500px;
+border:1px solid;
+position: absolute;
+left:30rem;
+top:50px;
+}
+h1{
+    text-align: center;
+    position: relative;
+    top:20px;
+    color:#191614;
+
+}
+#number:hover{
+    box-shadow:1px 1px 10px 2px red;
+}
+input{
+    position: relative;
+    top:150px;
+    left:150px;
+    height:25px;
+}
+#button{
+    cursor: pointer;
+    border:1px solid rgb(255, 183, 75);
+    width:100px;
+    height:29px;
+    color:olive;
+    font-size: 15px;
+}
+#year{
+    position: relative;
+    top:13rem;
+    left:180px;
+    color: rgb(15, 14, 12);
+    font-size: 20px;
+    line-height: 40px;
+    border:2px solid #E99160;
+    width:200px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    
+    <img src="images/giphy.gif">
+    <div id="container">
+<!-- container start -->
+<h1>Find your Birth-Year</h1>
+<form>
+
+<input type="number" name="number" id="number" placeholder="Type Your Age"/>
+<input type="button" value="Find Year" id="button"/>
+<p id="year">Year Born:</p>
+
+</form>
+
+<p id="nameperson"></p>
+
+
+
+    </div>
+    <!-- container end -->
+
+
+    <script>
+        var dataname=document.getElementById('nameperson');
+        var name2 = prompt("Hi ! What is your Name?");
+        function name1(){
+            // document.getElementsByTagName('h1')[0].style.color="navajowhite";
+            // document.getElementsByTagName('h1')[0].style.color="red";
+
+            document.getElementsByTagName('h1')[0].innerHTML=name2+"<br>"+"Do you want to find your year of birth?";
+        
+    }
+    name1();
+    function calculate(){
+        var number=document.getElementById("number").value;
+        if(number == " " || number==0){
+            alert("Please type a valid age!!");
+        }
+        var date=new Date().getFullYear();
+        var birthYear = date- number;
+        document.getElementById("year").innerHTML="Year Born:" + birthYear;
+        document.getElementById("year").style.color="black";
+    }
+    document.getElementById("button").onclick= function(){
+    dataname.innerText= `${name2}`
+    dataname.style.color='#F4B0A9';
+    dataname.style.fontSize='30px';
+    dataname.style.textAlign='center';
+
+    calculate();
+    };
+    </script>
+</body>
+</html>

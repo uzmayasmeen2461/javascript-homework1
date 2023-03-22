@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .clothing_products {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .electronics_products {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    margin-top: 100px;
+    margin-left: 70px;
+    color: rgb(27, 25, 25);
+    font-weight: bold;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4%;
+  }
+  .accessories_products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4%;
+  }
+  .product_card {
+    width: 15%;
+    min-width: 200px;
+    height: auto;
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+  }
+  .product_card:hover {
+    box-shadow: 0 2px 10px rgb(0 0 0 / 60%);
+  }
+  
+  img {
+    width: 100%;
+  }
+  .description {
+    padding-left: 10px;
+    margin: 10px auto;
+  }
+  .product_title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+  }
+  .product_subtitle {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+  }
+  .product_price {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #009688;
+  }
+  
+  @media only screen and (max-width: 495px) {
+    .title {
+      margin-top: 100px;
+      margin-left: 30px;
+      color: rgb(27, 25, 25);
+      font-weight: bold;
+    }
+    .product_card {
+      width: 45%;
+      min-width: 15%;
+      height: auto;
+      margin: 30px 09px;
+      cursor: pointer;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .product_card {
+      width: 40%;
+      min-width: 15%;
+      height: auto;
+      margin: 30px 09px;
+      cursor: pointer;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    }
+  }
+  

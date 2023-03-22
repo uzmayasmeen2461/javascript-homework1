@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> BOM stands for Browser Object Model and it includes properties and 
+        methods for javascript to interact with web browser</p>
+        <p id="demo"></p>
+        <button  onclick="resizeWin()">resize </button>
+<script>
+    //window Object
+//represents browser's window
+//global variables functions all are members of window object
+
+// window.document.getElementById
+
+const p = document.getElementById("demo")
+
+p.innerHTML = "browser inner window height "+ window.innerHeight +" px"+ " browser inner width "+
+window.innerWidth + " px"
+// window.open() - opens a new window
+// window.close() - closes current window
+// window.moveTo() - move the current window
+// window.resizeTo() - resizes the current window
+
+function resizeWin(){
+    console.log(window.innerHeight)
+    window.resizeTo(300,300)
+}
+
+
+    //screen object
+//window.screen object contains information about users screen
+//screen.width returns visitors screen in pixels
+p.innerHTML = "screen width is " + screen.width
+// screen.height
+p.innerHTML = "screen height is " + screen.height
+// screen.availWidth
+p.innerHTML = "available screen width is " + screen.availWidth
+
+// screen.availHeight
+p.innerHTML = "available screen height is " + screen.availHeight
+
+// screen.colorDepth
+
+p.innerHTML = "screen color depth is " + screen.colorDepth
+// screen.pixelDepth
+p.innerHTML = "screen pixel depth is " + screen.pixelDepth
+
+
+
+
+
+
+    //navigator object
+
+    // window.navigator contains information about visitors browser
+    
+    //navigator.cookieEnabled
+    //navigator.appCodeName returns applicaion name
+    //navigator.platform
+
+
+    p.innerHTML = "navigator.cookie enabled is "  +navigator.cookieEnabled
+    
+    p.innerHTML = "navigator appname is "+navigator.appCodeName
+    
+    p.innerHTML = "navigator platform is "+navigator.platform
+    
+    p.innerHTML = "navigator online "  +navigator.onLine
+    
+    //location object
+
+
+    // window.location used to get current page address
+//window.location.href
+
+p.innerHTML = "the url is" +window.location.href
+
+p.innerHTML = "page host is" +window.location.host
+p.innerHTML = "path name  is" +window.location.pathname
+p.innerHTML = "page protocol is " +window.location.protocol
+p.innerHTML = "prt number  is " +window.location.port
+
+p.addEventListener("click",function(){
+    window.location.assign("https://www.w3schools.com")
+})
+    //history object
+    //local storage
+
+
+
+</script>
+        
+
+
+
+</body>
+</html>

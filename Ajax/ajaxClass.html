@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="demo">
+        <h2>Ajax into action</h2>
+        <button type="button" onclick="loadDoc()">Change content</button>
+    </div>
+
+
+    <script>
+        //AJAX stands for Asynchronous Javascript and XML
+
+
+        //XML stands for eXtensible markup lang
+        //to store and transport data
+//xml - carry the data ----html focus on how data looks
+
+//backend allows the computer application or code to operate that cannot be accessed by user
+
+//ajax Read data from a web server - after the page has loaded
+// Update a web page without reloading the page
+// Send data to a web server - in the background
+
+
+function loadDoc(){
+    const xhttp = new XMLHttpRequest(); //object
+xhttp.onload = function(){
+    const obj = JSON.parse(this.responseText);
+    console.log(obj)
+    document.getElementById("demo").innerHTML=obj.employees[0].firstName + " " + obj.employees[0].LastName;
+    
+}
+xhttp.open("GET","data.json"); //create response
+xhttp.send() //sending http request
+
+}
+
+
+    </script>
+</body>
+</html>

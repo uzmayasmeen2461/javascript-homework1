@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="demo"></p>
+
+<script>
+
+let postObj = {
+    id:1,
+    title:"What is AJAX",
+    body:"Ajax stands for ASYNC Javascript"
+}
+
+let post = JSON.stringify(postObj);
+console.log(post);
+const url = "https://jsonplaceholder.typicode.com/posts";
+let xhr = new XMLHttpRequest()
+
+xhr.open('POST',url,true)
+xhr.setRequestHeader("content-type",'application/json')
+xhr.send(post);
+
+xhr.onload = function(){
+    if(xhr.status === 201){
+        console.log("Post successfully created")
+        console.log(xhr.status)
+const data =  JSON.parse(xhr.responseText)
+console.log(data)
+        document.getElementById("demo").innerHTML =
+        `id is ${data.id} and title is ${ data.title}
+        with the data saying ${ data.body}
+        `
+        console.log(this.getResponseHeader("content-type"))
+      
+    }
+}
+
+
+
+
+</script>
+
+</body>
+</html>

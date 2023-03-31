@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Javascript error handling methods</h1>
+   
+<input type="text" id="input">
+<button type="button" onclick="myFunction()"> test input</button>
+<br>
+ <p id="demo"></p>
+
+<script>
+
+// try {
+//     //code
+// } catch (error) {
+//     //disply error
+// }
+
+
+// try {
+//     addddlert("welcome guest")
+// } catch (error) {
+//     console.log(error);
+//    document.getElementById("demo").innerHTML= error.message;
+// }
+
+
+function myFunction(){
+    const message = document.getElementById("demo")
+
+    let x = document.getElementById("input").value;
+    
+
+    try {
+        message.innerHTML = "LOADING..."
+        if (x.trim() == "") throw "empty";
+        if(isNaN(x) ) throw "not a number";
+        x=Number(x);
+console.log(x)
+
+        if(x<5) throw "too low";
+        if(x>10) throw "too high";
+    } catch (error) {
+        message.innerHTML = "input is " + error 
+        
+    }
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

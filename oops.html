@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object oriented mechanisms supported in js
+//object
+//classes
+//encapsulation
+//abstraction
+//inheritance
+//polymorphism
+
+//object
+
+//an object is an instance of a class
+
+
+
+
+
+// let person = {
+//     firstName:"john",
+//     secondName:"Doe",
+//     getFunction: function(){
+//         return `the name is ${person.firstName} ${person.secondName}`
+//     }
+// }
+
+// console.log(person.getFunction())
+
+
+
+function friend(firstName,lastName){
+    this.firstName = firstName,
+    this.lastName = lastName
+}
+
+let friend1 = new friend('jacob','smith');
+let friend2 = new friend("joe","doe");
+console.log(friend1.firstName);
+console.log(`${friend2.firstName} ${friend2.lastName}`);
+
+
+
+const coder = {
+    isStudying:false,
+    introduction: function(){
+        console.log(`My name is ${this.name}. am i sTUDYING? : ${this.isStudying}`)
+    }
+}
+
+
+const me = Object.create(coder);
+me.name = "mukul"
+
+me.isStudying = true;
+me.isStudying=false
+me.age=30;
+me.introduction()
+console.log(me)
+
+
+
+
+//classes
+
+// classes are blueprints of an object
+
+class Vehicle{
+    constructor(name,color,engine){
+        this.name = name;
+        this.color=color;
+        this.engine=engine;
+    }
+   
+    addAddress(add){
+        this.add = add
+    } 
+    getDetails(){
+        return (`the name of the car is ${this.name} and address is ${this.add}`)
+    }
+}
+
+let car1 = new Vehicle('Honda',"red","automatic")
+car1.addAddress("hyd");
+console.log(car1.getDetails());
+let car2 = new Vehicle('Thar',"black","manual");
+
+console.log(car1.getDetails());
+
+
+function MyVehicle(name,color,engine){
+    this.name = name;
+    this.color=color;
+    this.engine=engine
+    console.log(this)
+};
+
+MyVehicle.prototype.getDetails = function(){
+    console.log(`the name of car is ${this.name}`);
+}
+
+let carOne = new MyVehicle('Honda',"red","automatic")
+
+let carTwo = new MyVehicle('Thar',"black","manual");
+
+console.log(carTwo.getDetails())
+
+MyVehicle()
+//constructor is a special function that creates and initializes an 
+//object instance of a class
+//to create a new object and set values for any existing object
+//it gets called when we use new keyword
+
+//encapsulation-- process of wrapping properties and functions within a single unit 
+
+
+
+//Abstraction 
+//displaying only essential info and hiding details
+//hiding the background details
+
+
+// function person(fName,lName){
+//     let firstName = fName;
+//     let lastName=lName;
+//     let getDetails_noaccess = function(){
+//         return `firstName is ${firstName} last name is ${lastName}`
+//     }
+//     this.getDetails_access = function(){
+//         return `firstName is ${firstName} last name is ${lastName}`
+//     }
+
+
+// }
+
+// let person1 = new person('john',"dave")
+
+// console.log(person1.firstName);
+// console.log(person1.getDetails_noaccess);
+// console.log(person1.getDetails_access())
+
+
+//inheritance 
+
+//some properties and methods of an object is used by some other objects
+
+//one object can be reused by other objects
+
+class person{
+    constructor(name){
+        this.name = name
+    }
+    //method to return a string
+
+    intro(){
+        return (`Name of the person is ${this.name}`)
+    }
+}
+
+class student extends person{
+    constructor(name,id){
+        //super keyword for calling the above class constructor
+       super(name);
+        this.id=id;
+    }
+    intro(){
+        return (`${super.intro()} , student Id : ${this.id}`)
+    }
+}
+
+
+
+console.clear();
+let student1 = new student("john",22);
+console.log(student1.intro());
+
+
+
+
+
+    </script>
+</body>
+</html>

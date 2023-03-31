@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+var navbar = document.createElement("div");
+
+ navbar.style.backgroundColor="black";
+navbar.style.width="100%";
+navbar.style.height="80px";
+navbar.style.position="absolute";
+navbar.style.top="0px";
+navbar.style.left="0px";
+
+document.body.appendChild(navbar);
+
+var ul = document.createElement("ul");
+ul.style.marginTop="-5px";
+var li = document.createElement("li");
+var li1 = document.createElement("li");
+ul.appendChild(li1);
+li1.innerHTML="BAND";
+navbar.appendChild(ul);
+ul.appendChild(li);
+li.innerHTML="HOME";
+
+li1.style.color="white";
+li1.style.listStyle="none";
+li1.style.position="relative";
+li1.style.left="110px";
+li1.style.top="17px";
+//li.innerHTML="BAND";
+// li.innerHTML="TOUR";
+// li.innerHTML="CONTACT";
+// li.innerHTML="MORE";
+
+li.style.color="white";
+li.style.listStyle="none";
+
+li.style.position="relative";
+li.style.left="30px";
+ ul.style.position="relative";
+ ul.style.top="120px;"
+
+ var li2 = document.createElement("li");
+ ul.appendChild(li2);
+ li2.innerHTML="TOUR";
+ li2.style.color="white";
+li2.style.listStyle="none";
+li2.style.position="relative";
+li2.style.left="190px";
+li2.style.top="-19px";
+
+var li3 = document.createElement("li");
+ ul.appendChild(li3);
+ li3.innerHTML="CONTACT";
+ li3.style.color="white";
+li3.style.listStyle="none";
+li3.style.position="relative";
+li3.style.left="260px";
+li3.style.top="-37px";
+
+
+var banner = document.createElement("img");
+
+
+banner.setAttribute("src","./images/images/chicago.jpeg");
+banner.style.border="1px solid";
+banner.style.width="100%";
+banner.style.height="100vh";
+banner.style.position="absolute";
+banner.style.top="50px";
+banner.style.left="-20px";
+document.body.appendChild(banner);
+var title = document.createElement("h1");
+title.innerHTML="Chicago";
+title.style.color="red";
+title.style.position="relative";
+banner.appendChild(title);
+title.style.top="20px";
+title.style.fontSize="200px";
+console.log(title);
+console.log(banner); //not showing up
+
+var section2 = document.createElement("div");
+section2.style.width="100%";
+section2.style.height="80vh";
+section2.style.backgroundColor="white";
+document.body.appendChild(section2);
+section2.style.position="absolute";
+section2.style.top="120%";
+
+var band = document.createElement("h1");
+band.innerHTML="THE BAND";
+section2.appendChild(band);
+band.style.textAlign="center";
+band.style.fontSize="30px";
+band.style.fontWeight="400";
+band.style.lineHeight="45px";
+
+var band2 = document.createElement("h6");
+band2.innerHTML="We love music";
+section2.appendChild(band2);
+band2.style.textAlign="center";
+band2.style.fontSize="15px";
+band2.style.fontWeight="400";
+band2.style.lineHeight="22.5px";
+band2.style.marginTop="-10px";
+band2.style.color="gray";
+band2.style.fontStyle="italic";
+
+var bandpara = document.createElement("p");
+bandpara.innerHTML="We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit<br> anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+section2.appendChild(bandpara);
+bandpara.style.textAlign="center";
+bandpara.style.fontSize="16px";
+bandpara.style.fontWeight="500";
+bandpara.style.lineHeight="22.5px";
+
+
+var picdiv = document.createElement("div");
+picdiv.style.width="200px";
+picdiv.style.height="230px";
+// picdiv.style.border="1px solid";
+picdiv.style.position="relative";
+picdiv.style.top="20px";
+picdiv.style.left="350px";
+
+section2.appendChild(picdiv);
+
+var newh2 = document.createElement("h2");
+newh2.innerHTML="Name";
+picdiv.appendChild(newh2);
+newh2.style.fontSize="20px";
+newh2.style.textAlign="center";
+
+var newimg= document.createElement("img");
+newimg.setAttribute("src","./images/images/bandmember.jpeg");
+newimg.style.width="200px";
+picdiv.appendChild(newimg);
+
+
+var hewh21 = document.createElement("h2");
+hewh21.innerHTML="Name";
+picdiv.appendChild(hewh21);
+hewh21.style.fontSize="20px";
+hewh21.style.textAlign="center";
+hewh21.style.position="relative";
+hewh21.style.left="18rem";
+hewh21.style.top="-16rem";
+
+
+var newimg= document.createElement("img");
+newimg.setAttribute("src","./images/images/bandmember.jpeg");
+newimg.style.position="relative";
+newimg.style.left="18rem";
+newimg.style.top="-16rem";
+newimg.style.width="200px";
+
+picdiv.appendChild(newimg);
+
+
+var newh23 = document.createElement("h2");
+newh23.innerHTML="Name";
+picdiv.appendChild(newh23);
+newh23.style.fontSize="20px";
+newh23.style.textAlign="center";
+newh23.style.position="relative";
+newh23.style.top="-32rem";
+newh23.style.left="37rem";
+
+
+var newimg= document.createElement("img");
+newimg.setAttribute("src","./images/images/bandmember.jpeg");
+newimg.style.position="relative";
+newimg.style.left="36rem";
+newimg.style.top="-32rem";
+newimg.style.width="200px";
+
+picdiv.appendChild(newimg);
+
+var black = document.createElement("div");
+black.style.width="100%";
+black.style.height="100vh";
+black.style.backgroundColor="black"
+black.style.position="absolute";
+black.style.top="210%";
+
+
+document.body.appendChild(black);
+
+var tour = document.createElement("h1");
+tour.innerHTML="TOUR DATES";
+black.appendChild(tour);
+tour.style.textAlign="center";
+tour.style.fontSize="30px";
+tour.style.fontWeight="400";
+tour.style.lineHeight="60px";
+tour.style.color="white";
+
+
+var tour2 = document.createElement("h6");
+tour2.innerHTML="Remember to book your tickets!";
+black.appendChild(tour2);
+tour2.style.textAlign="center";
+tour2.style.fontSize="18px";
+tour2.style.fontWeight="400";
+tour2.style.lineHeight="22.5px";
+tour2.style.marginTop="-10px";
+tour2.style.color="gray";
+tour2.style.fontStyle="italic";
+
+var box1 = document.createElement("div");
+box1.style.width="800px";
+box1.style.height="50px";
+box1.style.backgroundColor="white";
+box1.style.position="relative";
+box1.style.top="10px";
+box1.style.left="300px";
+box1.innerHTML="September";
+box1.style.fontSize="18px";
+box1.style.color="gray";
+box1.style.borderBottom="1px solid gray";
+
+black.appendChild(box1);
+
+var sold = document.createElement("div");
+sold.style.width="100px";
+sold.style.height="20px";
+sold.style.backgroundColor="red";
+box1.appendChild(sold);
+sold.innerHTML="Sold Out";
+sold.style.color="white";
+sold.style.position="relative";
+sold.style.left="90px";
+sold.style.top="-15px";
+
+var box1 = document.createElement("div");
+box1.style.width="800px";
+box1.style.height="50px";
+box1.style.backgroundColor="white";
+box1.style.position="relative";
+box1.style.top="10px";
+box1.style.left="300px";
+box1.innerHTML="October";
+box1.style.fontSize="18px";
+box1.style.color="gray";
+box1.style.borderBottom="1px solid gray";
+black.appendChild(box1);
+
+var sold = document.createElement("div");
+sold.style.width="100px";
+sold.style.height="20px";
+sold.style.backgroundColor="red";
+box1.appendChild(sold);
+sold.innerHTML="Sold Out";
+sold.style.color="white";
+sold.style.position="relative";
+sold.style.left="90px";
+sold.style.top="-15px";
+
+
+var box1 = document.createElement("div");
+box1.style.width="800px";
+box1.style.height="50px";
+box1.style.backgroundColor="white";
+box1.style.position="relative";
+box1.style.top="10px";
+box1.style.left="300px";
+box1.innerHTML="November";
+box1.style.fontSize="18px";
+box1.style.color="gray";
+box1.style.borderBottom="1px solid gray";
+black.appendChild(box1);
+
+var number= document.createElement("div");
+number.style.width="40px";
+number.style.height="40px";
+number.style.borderRadius="50%";
+number.style.backgroundColor="black";
+
+box1.appendChild(number);
+number.style.position="relative";
+number.style.left="700px";
+number.style.top="-20px";
+number.innerHTML="3";
+number.style.color="white";
+number.style.textAlign="center";
+
+var newbox = document.createElement("div");
+newbox.style.width="250px";
+newbox.style.height="350px";
+newbox.style.backgroundColor="white";
+newbox.style.position="relative";
+black.appendChild(newbox);
+newbox.style.left="18.7rem";
+newbox.style.top="30px";
+var newboximg = document.createElement("img");
+newboximg.setAttribute("src","/images/images/newyork.jpeg")
+newboximg.style.width="100%";
+newboximg.style.height="50%";
+newbox.appendChild(newboximg);
+
+var newboxh3 = document.createElement("h3");
+newboxh3.innerHTML="New York";
+newbox.appendChild(newboxh3);
+newboxh3.style.position="relative";
+newboxh3.style.textAlign="left";
+newboxh3.style.left="15px";
+newboxh3.style.fontSize="15px";
+newboxh3.style.fontWeight="700";
+
+var newboxh4 = document.createElement("h3");
+newboxh4.innerHTML="Fri 27 Nov 2016";
+newbox.appendChild(newboxh4);
+newboxh4.style.position="relative";
+newboxh4.style.textAlign="left";
+newboxh4.style.left="15px";
+newboxh4.style.fontSize="15px";
+newboxh4.style.fontWeight="700";
+newboxh4.style.color="gray";
+
+var newboxh5 = document.createElement("h3");
+newboxh5.innerHTML="Praesent tincidunt sed tellus ut <br>rutrum sed vitae justo.";
+newbox.appendChild(newboxh5);
+newboxh5.style.position="relative";
+newboxh5.style.textAlign="left";
+newboxh5.style.left="15px";
+newboxh5.style.fontSize="15px";
+newboxh5.style.fontWeight="700";
+
+var newboxbutton = document.createElement("button");
+newboxbutton.innerHTML="Buy Tickets";
+newbox.appendChild(newboxbutton);
+newboxbutton.style.position="relative";
+newboxbutton.style.textAlign="left";
+newboxbutton.style.left="15px";
+newboxbutton.style.backgroundColor="black";
+newboxbutton.style.color="white";
+newboxbutton.style.border="none";
+newboxbutton.style.cursor="pointer";
+newboxbutton.style.height="30px";
+
+newboxbutton.style.fontSize="15px";
+newboxbutton.style.fontWeight="700";
+
+
+//box 2 
+
+var newbox = document.createElement("div");
+newbox.style.width="250px";
+newbox.style.height="350px";
+newbox.style.backgroundColor="white";
+newbox.style.position="relative";
+black.appendChild(newbox);
+newbox.style.left="35.7rem";
+newbox.style.top="-320px";
+var newboximg = document.createElement("img");
+newboximg.setAttribute("src","/images/images/paris.jpeg")
+newboximg.style.width="100%";
+newboximg.style.height="50%";
+newbox.appendChild(newboximg);
+
+var newboxh3 = document.createElement("h3");
+newboxh3.innerHTML="Paris";
+newbox.appendChild(newboxh3);
+newboxh3.style.position="relative";
+newboxh3.style.textAlign="left";
+newboxh3.style.left="15px";
+newboxh3.style.fontSize="15px";
+newboxh3.style.fontWeight="700";
+
+var newboxh4 = document.createElement("h3");
+newboxh4.innerHTML="Sat 28 Nov 2016";
+newbox.appendChild(newboxh4);
+newboxh4.style.position="relative";
+newboxh4.style.textAlign="left";
+newboxh4.style.left="15px";
+newboxh4.style.fontSize="15px";
+newboxh4.style.fontWeight="700";
+newboxh4.style.color="gray";
+
+var newboxh5 = document.createElement("h3");
+newboxh5.innerHTML="Praesent tincidunt sed tellus ut <br>rutrum sed vitae justo.";
+newbox.appendChild(newboxh5);
+newboxh5.style.position="relative";
+newboxh5.style.textAlign="left";
+newboxh5.style.left="15px";
+newboxh5.style.fontSize="15px";
+newboxh5.style.fontWeight="700";
+
+var newboxbutton = document.createElement("button");
+newboxbutton.innerHTML="Buy Tickets";
+newbox.appendChild(newboxbutton);
+newboxbutton.style.position="relative";
+newboxbutton.style.textAlign="left";
+newboxbutton.style.left="15px";
+newboxbutton.style.backgroundColor="black";
+newboxbutton.style.color="white";
+newboxbutton.style.border="none";
+newboxbutton.style.cursor="pointer";
+newboxbutton.style.height="30px";
+
+newboxbutton.style.fontSize="15px";
+newboxbutton.style.fontWeight="700";
+
+
+//box 3
+
+
+var newbox = document.createElement("div");
+newbox.style.width="250px";
+newbox.style.height="350px";
+newbox.style.backgroundColor="white";
+newbox.style.position="relative";
+black.appendChild(newbox);
+newbox.style.left="52.7rem";
+newbox.style.top="-670px";
+var newboximg = document.createElement("img");
+newboximg.setAttribute("src","/images/images/sanfran.jpeg")
+newboximg.style.width="100%";
+newboximg.style.height="50%";
+newbox.appendChild(newboximg);
+
+var newboxh3 = document.createElement("h3");
+newboxh3.innerHTML="San Francisco";
+newbox.appendChild(newboxh3);
+newboxh3.style.position="relative";
+newboxh3.style.textAlign="left";
+newboxh3.style.left="15px";
+newboxh3.style.fontSize="15px";
+newboxh3.style.fontWeight="700";
+
+var newboxh4 = document.createElement("h3");
+newboxh4.innerHTML="Sun 29 Nov 2016";
+newbox.appendChild(newboxh4);
+newboxh4.style.position="relative";
+newboxh4.style.textAlign="left";
+newboxh4.style.left="15px";
+newboxh4.style.fontSize="15px";
+newboxh4.style.fontWeight="700";
+newboxh4.style.color="gray";
+
+var newboxh5 = document.createElement("h3");
+newboxh5.innerHTML="Praesent tincidunt sed tellus ut <br>rutrum sed vitae justo.";
+newbox.appendChild(newboxh5);
+newboxh5.style.position="relative";
+newboxh5.style.textAlign="left";
+newboxh5.style.left="15px";
+newboxh5.style.fontSize="15px";
+newboxh5.style.fontWeight="700";
+
+var newboxbutton = document.createElement("button");
+newboxbutton.innerHTML="Buy Tickets";
+newbox.appendChild(newboxbutton);
+newboxbutton.style.position="relative";
+newboxbutton.style.textAlign="left";
+newboxbutton.style.left="15px";
+newboxbutton.style.backgroundColor="black";
+newboxbutton.style.color="white";
+newboxbutton.style.border="none";
+newboxbutton.style.cursor="pointer";
+newboxbutton.style.height="30px";
+
+newboxbutton.style.fontSize="15px";
+newboxbutton.style.fontWeight="700";
+
+
+var contact = document.createElement("div");
+contact.style.width="100%";
+contact.style.height="70vh";
+contact.style.position="absolute";
+contact.style.backgroundColor="white";
+
+contact.style.top="310%";
+document.body.appendChild(contact);
+
+
+var cntcth1 = document.createElement("h1");
+cntcth1.innerHTML="CONTACT";
+contact.appendChild(cntcth1);
+cntcth1.style.textAlign="center";
+cntcth1.style.fontSize="30px";
+cntcth1.style.fontWeight="400";
+cntcth1.style.lineHeight="45px";
+
+
+var cntcth6 = document.createElement("h6");
+cntcth6.innerHTML="Fan? Drop a note!";
+contact.appendChild(cntcth6);
+cntcth6.style.textAlign="center";
+cntcth6.style.fontSize="17px";
+cntcth6.style.fontWeight="400";
+cntcth6.style.lineHeight="22.5px";
+cntcth6.style.marginTop="-10px";
+cntcth6.style.color="gray";
+cntcth6.style.fontStyle="italic";
+
+var locicon = document.createElement("i");
+contact.appendChild(locicon);
+locicon.setAttribute("class","fas fa-envelope");
+locicon.style.fontSize="18px";
+locicon.style.position="relative";
+locicon.style.top="180px";
+locicon.style.left="228px";
+locicon.style.color="black";
+
+
+var locicon = document.createElement("i");
+contact.appendChild(locicon);
+locicon.setAttribute("class","fas fa-phone-alt");
+locicon.style.fontSize="18px";
+locicon.style.position="relative";
+locicon.style.top="130px";
+locicon.style.left="210px";
+locicon.style.color="black";
+
+
+var locicon = document.createElement("i");
+contact.appendChild(locicon);
+locicon.setAttribute("class","fas fa-map-marker-alt");
+locicon.style.fontSize="18px";
+locicon.style.position="relative";
+locicon.style.top="80px";
+locicon.style.left="200px";
+locicon.style.color="black";
+
+
+var tagname= document.createElement("h2");
+contact.appendChild(tagname);
+tagname.innerHTML=" Chicago, US";
+tagname.style.position="relative";
+tagname.style.fontSize="18px";
+tagname.style.fontWeight="400";
+tagname.style.left="280px";
+tagname.style.top="40px";
+
+
+var tagnumber= document.createElement("h2");
+contact.appendChild(tagnumber);
+tagnumber.innerHTML="Phone: +00 151515";
+tagnumber.style.position="relative";
+tagnumber.style.fontSize="18px";
+tagname.style.fontWeight="400";
+
+tagnumber.style.left="270px";
+tagnumber.style.top="54px";
+
+var tagmail= document.createElement("h2");
+contact.appendChild(tagmail);
+tagmail.innerHTML="Email: mail@mail.com";
+tagmail.style.position="relative";
+tagmail.style.fontSize="18px";
+tagname.style.fontWeight="400";
+
+tagmail.style.left="270px";
+tagmail.style.top="65px";
+
+
+var form1 = document.createElement("div");
+form1.style.width="200px";
+form1.style.height="50px";
+form1.style.border="1px solid #CCCCCC";
+form1.style.position="relative";
+form1.style.left="45rem";
+form1.style.top="-100px";
+form1.innerHTML="Name";
+form1.style.fontSize="18px";
+form1.style.color="gray"
+
+contact.appendChild(form1);
+
+var form1 = document.createElement("div");
+form1.style.width="200px";
+form1.style.height="50px";
+form1.style.border="1px solid #CCCCCC";
+form1.style.position="relative";
+form1.style.left="59rem";
+form1.style.top="-150px";
+form1.innerHTML="Email";
+form1.style.fontSize="18px";
+form1.style.color="gray"
+
+
+contact.appendChild(form1);
+
+
+var form1 = document.createElement("div");
+form1.style.width="420px";
+form1.style.height="50px";
+form1.style.border="1px solid #CCCCCC";
+form1.style.position="relative";
+form1.style.left="45rem";
+form1.style.top="-130px";
+form1.innerHTML="Message";
+form1.style.fontSize="18px";
+form1.style.color="gray"
+
+contact.appendChild(form1);
+
+var formbutton = document.createElement("button");
+formbutton.style.width="100px";
+formbutton.style.height="40px";
+formbutton.style.border="1px solid #CCCCCC";
+formbutton.style.position="relative";
+formbutton.style.left="65rem";
+formbutton.style.top="-120px";
+formbutton.innerHTML="Message";
+formbutton.style.fontSize="18px";
+formbutton.style.color="white"
+formbutton.style.backgroundColor="black"
+
+
+contact.appendChild(formbutton);
+
+var mapimg = document.createElement("img");
+document.body.appendChild(mapimg);
+mapimg.setAttribute("src","/images/images/map.jpeg")
+mapimg.style.position="absolute";
+mapimg.style.width="100%";
+mapimg.style.height="100vh";
+mapimg.style.top="380%";
+
+var lastsection = document.createElement("div");
+document.body.appendChild(lastsection);
+lastsection.style.position="absolute";
+lastsection.style.width="100%";
+lastsection.style.height="30vh";
+lastsection.style.top="480%";
+
+var lasticons = document.createElement("div");
+lastsection.appendChild(lasticons);
+lasticons.style.width="300px";
+lasticons.style.height="50px";
+// lasticons.style.border="1px solid";
+lasticons.style.position="relative";
+lasticons.style.top="80px";
+lasticons.style.left="550px";
+lasticons.style.fontSize="24px";
+lasticons.style.color="gray";
+// lasticons.style.padding="10px";
+lasticons.style.display="flex";
+lasticons.style.justifyContent="space-evenly";
+
+
+
+var fb= document.createElement("i");
+lasticons.appendChild(fb);
+fb.setAttribute("class","fab fa-facebook");
+
+var fb= document.createElement("i");
+lasticons.appendChild(fb);
+fb.setAttribute("class","fab fa-instagram");
+
+var fb= document.createElement("i");
+lasticons.appendChild(fb);
+fb.setAttribute("class","fab fa-snapchat");
+
+var fb= document.createElement("i");
+lasticons.appendChild(fb);
+fb.setAttribute("class","fab fa-pinterest");
+
+var fb= document.createElement("i");
+lasticons.appendChild(fb);
+fb.setAttribute("class","fab fa-twitter");
+
+var fb= document.createElement("i");
+lasticons.appendChild(fb);
+fb.setAttribute("class","fab fa-linkedin");
+
+
+
+var copyrightline= document.createElement("h2");
+lastsection.appendChild(copyrightline);
+copyrightline.innerHTML=" Powered by w3.css";
+copyrightline.style.position="relative";
+copyrightline.style.fontSize="18px";
+copyrightline.style.fontWeight="400";
+copyrightline.style.left="-20px";
+copyrightline.style.top="60px";
+// copyrightline.style.top="40px";
+copyrightline.style.textAlign="center";
+copyrightline.style.color="gray";
+
+
+
+</script>
+
+</body>
+</html>
